@@ -1,0 +1,58 @@
+.logo-name{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-name h2{
+    display: flex;
+    margin-top: 2rem;
+}
+
+#form_action{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 0.4rem;
+    border: 0.1rem solid black;
+    padding: 3rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    margin-top: 2rem;
+}
+button{
+    margin-top: 2rem;
+    width: 7rem;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    border-radius: 1rem;
+    border: 0.08rem solid black;
+
+    
+}
+
+#form-action button{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 1.8rem;
+}
+
+select{
+    height: 1.8rem;
+}
+
+label::After{
+    content: " *";
+    color: red;
+    font-weight: bold;
+}

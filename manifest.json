@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "My First Chrome Extension",
+    "version": "1.0",
+    "description": "A simple Chrome extension example",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "FindNAct.png",
+        "48": "FindNAct.png",
+        "128": "FindNAct.png"
+      }
+    },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts":[{
+        "js":["Scripts/content.js"],
+        "matches":["<all_urls>"]
+    }]
+  }
+  

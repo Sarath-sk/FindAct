@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindNAct</title>
+    <link rel="icon" href="Icons/FindNAct.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-name">
+        <img src="Icons/FindNAct.png" alt="FindNAct" width="70rem" height="70rem">
+        <h2>FindNAct</h2>
+    </div>
+
+    <div class="content">
+        <form id="form_action">
+            <p><span style="color: red;">*</span><i>mandatory fields to be filled.</i></p>
+
+            <label for="locator">Element Locator :</label>
+            <input type="text" id="locator" placeholder="e.g., #submitButton" required>
+
+            <label for="strategy">Locator Strategy :</label>
+            <select id="strategy" required>
+                <option value="" selected disabled>Select an option</option>
+                <option value="css">CSS Selector</option>
+                <option value="xpath">XPath</option>
+                <option value="ID">ID</option>
+            </select>
+
+            <label for="action">Action :</label>
+            <select id="action" required>
+                <option value="" selected disabled>Select an option</option>
+                <option value="click">Click</option>
+                <option value="clear">Clear</option>
+                <option value="fill">Fill</option>
+            </select>
+
+            <button>Perform Action</button>
+
+        </form>
+    </div>
+
+    <script src="Scripts/popup.js"></script>
+    
+</body>
+</html>
